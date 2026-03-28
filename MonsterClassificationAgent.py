@@ -1,7 +1,7 @@
 import math as guru
 class MonsterClassificationAgent:
     def __init__(self):
-        #If you want to do any initial processing, add it here.
+    
         self.fctotrsThatDfineAMonstre = {
             #I will defnemy params and diff valuus dfine what a msonter is
             'size': ['tiny', 'small', 'medium', 'large', 'huge'],
@@ -37,16 +37,18 @@ class MonsterClassificationAgent:
         goDPoSSsamops = []
         badDNeGGSamps = []
 
-        if len(goDPoSSsamops) == 0:
-            return False
-        if len(badDNeGGSamps) == 0:
-            return True
-        
         for x, y in samples:
             if y:
                 goDPoSSsamops.append(x)
             else:
                 badDNeGGSamps.append(x)
+
+        if len(goDPoSSsamops) == 0:
+            return False
+        if len(badDNeGGSamps) == 0:
+            return True
+        
+        
         
         comP_ofValsues4Posts = {}
         for x in muPArams:
